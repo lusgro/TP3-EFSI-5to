@@ -1,0 +1,39 @@
+input {
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0;
+    width: 100%;
+    margin: 0 0 15px
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"] {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    cursor: default;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
