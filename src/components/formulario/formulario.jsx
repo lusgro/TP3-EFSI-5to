@@ -10,8 +10,16 @@ const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { mascota, dueño, fecha, hora, sintomas } = Object.fromEntries(new FormData(e.target))
+        if (!validateInput(mascota) || !validateInput(dueño) || !validateInput(fecha) || !validateInput(hora) || !validateInput(sintomas)) {
+            alert('Todos los campos son obligatorios')
+            return
+        }
         setCitas([...citas, new Cita(mascota, dueño, fecha, hora, sintomas)])
         e.target.reset()
+    }
+
+    const validateInput = (input) => {
+        return input.length > 0
     }
 
     return (
